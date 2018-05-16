@@ -17,7 +17,8 @@
 ## Expedia
   - Goal: Predict Hotel Cluster
   - Methods used:
-    - Extreme Gradient Boosting
-  - Score: 
+    - Most popular 5-clusters in for each srch_destination_id
+  - Score: 30.005%, top 82%
+  - Comment: This was a very specific competition where high result could be only achieved by leakage solution that couldn't work in real life + all best scores didn't use machine learning, therefore I didn't work more on it as it would be not beneficial for my data science leanring.
   
 ## AllState

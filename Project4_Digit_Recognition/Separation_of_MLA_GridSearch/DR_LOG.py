@@ -74,9 +74,9 @@ params = {'C': [0.001, 0.01, 0.1, 1, 10, 100],
          'tol' : [0.1, 10],
          'penalty' : ['l2']}
 
-LCV = GridSearch_method(model=sk.linear_model.LogisticRegression(),
+LOG = GridSearch_method(model=sk.linear_model.LogisticRegression(),
                         model_name='sk.linear_model.LogisticRegression',
                         params=params)
 
-LCV.to_csv('LCV.csv', index=False)
-MLA_AT.to_csv('MLA_AT_LCV.csv', index=False
+LOG.to_csv('LOG.csv', index=False)
+MLA_AT.to_csv('MLA_AT_LOG.csv', index=False)

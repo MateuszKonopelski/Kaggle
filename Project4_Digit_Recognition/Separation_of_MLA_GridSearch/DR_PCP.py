@@ -15,7 +15,7 @@ from xgboost import XGBClassifier
 ############################################################
 
 
-DIR = '../input/digit-recognizer/'
+DIR = '../input/'
 train_set = pd.read_csv(DIR + 'train.csv')
 print('Import finished')
 
@@ -52,7 +52,7 @@ def GridSearch_method(model, model_name, params):
     n_pca = 150
     X_pca = reduce_byPCA(X, n_pca)
 
-    cv_split = ShuffleSplit(n_splits=10, test_size=.1, train_size=.9, random_state=8)
+    cv_split = ShuffleSplit(n_splits=4, test_size=.25, train_size=.75, random_state=8)
 
     clf =  GridSearchCV(model, params, cv=cv_split, return_train_score=False).fit(X_pca, labels)
 
@@ -67,9 +67,10 @@ def GridSearch_method(model, model_name, params):
     print(clf.best_params_)
     return gs_results
 
+
 ############################################################
 
-params = {'penalty': ['l2', 'l1', 'elasticnet', None]}
+params = {'penalty': [None, 'l2', 'l1', 'elasticnet']}
 
 PCP = GridSearch_method(model=sk.linear_model.Perceptron(),
                         model_name='sk.linear_model.Perceptron',

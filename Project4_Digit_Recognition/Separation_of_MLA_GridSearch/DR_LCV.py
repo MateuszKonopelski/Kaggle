@@ -9,7 +9,6 @@ import sklearn.ensemble
 import sklearn.linear_model
 import sklearn.naive_bayes
 import sklearn.discriminant_analysis
-from xgboost import XGBClassifier
 
 
 ############################################################
@@ -69,15 +68,15 @@ def GridSearch_method(model, model_name, params):
 
 ############################################################
 
-params = {'max_depth': [10, 25, 50],
-          'n_estimators': [200, 350, 500],
-          'learning_rate': [0.0001, 0.001, 0.01, 0.1, 0.2, 0.3],
-          'max_iter': [10000]}
+params = {'C': [0.001, 0.01, 0.1, 1, 10, 100],
+         'multi_class': ['ovr', 'multinomial'],
+         'solver': ['newton-cg'],
+         'tol' : [0.1, 10],
+         'penalty' : ['l2']}
 
-LCV = GridSearch_method(model=sk.linear_model.LogisticRegressionCV(),
-                        model_name='sk.linear_model.LogisticRegressionCV',
+LCV = GridSearch_method(model=sk.linear_model.LogisticRegression(),
+                        model_name='sk.linear_model.LogisticRegression',
                         params=params)
 
 LCV.to_csv('LCV.csv', index=False)
-MLA_AT.to_csv('MLA_AT_LCV.csv', index=False)
-
+MLA_AT.to_csv('MLA_AT_LCV.csv', index=False

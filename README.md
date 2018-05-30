@@ -35,3 +35,7 @@
      - RandomForestClassifier (91.47%)
      - Other methods tested: ExtraTreesClassifier, XGBClassifier, BaggingClassifier, LogisticRegression, GaussianNB, SGDClassifier, LinearDiscriminantAnalysis, DecisionTreeClassifier, RidgeClassifier, Perceptron, BernoulliNB, ExtraTreeClassifier, AdaBoostClassifier, Lars, ElasticNet, LassoLars, PassiveAggressiveRegressor
    - Score: 
+
+## Random Acts of Pizza
+- Goal: Predict if Reddit user recieved a Pizza (NLP problem)
+***in progress***

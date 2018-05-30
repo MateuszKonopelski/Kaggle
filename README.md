@@ -22,3 +22,16 @@
   - Comment: This was a very specific competition where high result could be only achieved by leakage solution that couldn't work in real life + all best scores didn't use machine learning, therefore I didn't work more on it as it would be not beneficial for my data science leanring.
   
 ## AllState
+  - Goal: Predict insurance choices
+  - Comment: After initial data exploration I dropped this project because it resembles Titanic classification and therefore I wanted to learn machine leanring on some different problem. Although, I will go back to it, when I will be learning scikit-multilearn package. 
+  
+## Digit Recognizer
+   - Goal: Recognize hand-written digits.
+   - Top5 Method used (with cv score on train set):
+    - SVC (97.95%)
+    - KNeighborsClassifier (97.21%)
+    - QuadraticDiscriminantAnalysis (95.90%)
+    - GradientBoostingClassifier (92.22%)
+    - RandomForestClassifier (91.47%)
+   - Other methods tested: ExtraTreesClassifier, XGBClassifier, BaggingClassifier, LogisticRegression, GaussianNB, SGDClassifier, LinearDiscriminantAnalysis, DecisionTreeClassifier, RidgeClassifier, Perceptron, BernoulliNB, ExtraTreeClassifier, AdaBoostClassifier, Lars, ElasticNet, LassoLars, PassiveAggressiveRegressor
+   - Score: 

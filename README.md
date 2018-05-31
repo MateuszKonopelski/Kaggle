@@ -38,4 +38,11 @@
 
 ## Random Acts of Pizza
 - Goal: Predict if Reddit user recieved a Pizza (NLP problem)
-***in progress***
+- Methods used:
+     - LogisticRegression
+     - RidgeClassifier
+     - LinearSVC
+     - RandomForestClassifier
+     - BaggingClassifier
+     - KNeighborsClassifier
+- Score: 56%; top 62%

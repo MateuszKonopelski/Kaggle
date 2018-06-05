@@ -28,13 +28,13 @@
 ## Digit Recognizer
    - Goal: Recognize hand-written digits.
    - Top5 Method used (with cv score on train set):
-     - SVC (97.95%)
-     - KNeighborsClassifier (97.21%)
-     - QuadraticDiscriminantAnalysis (95.90%)
-     - GradientBoostingClassifier (92.22%)
-     - RandomForestClassifier (91.47%)
+     - SVC
+     - KNeighborsClassifier
+     - QuadraticDiscriminantAnalysis
+     - GradientBoostingClassifier
+     - RandomForestClassifier
      - Other methods tested: ExtraTreesClassifier, XGBClassifier, BaggingClassifier, LogisticRegression, GaussianNB, SGDClassifier, LinearDiscriminantAnalysis, DecisionTreeClassifier, RidgeClassifier, Perceptron, BernoulliNB, ExtraTreeClassifier, AdaBoostClassifier, Lars, ElasticNet, LassoLars, PassiveAggressiveRegressor
-   - Score: 
+   - Score: 95.53% top 60%
 
 ## Random Acts of Pizza
 - Goal: Predict if Reddit user recieved a Pizza (NLP problem)

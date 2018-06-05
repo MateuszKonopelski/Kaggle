@@ -46,3 +46,8 @@
      - BaggingClassifier
      - KNeighborsClassifier
 - Score: 57.46%; top 60%
+
+## Bike Sharing Demand
+- Goal: Forecast use of a city bikeshare system
+- Coment: This is a regression task but also data is perfect to mastering visualization skills
+
